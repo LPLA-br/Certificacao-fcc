@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<!--Projeto de Certificação freecode camp-->
+
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title> Microx® </title>
+		<link rel="stylesheet" href="./css/styles.css">
+	</head>
+	<body>
+		<header>
+			<h1 id="title"> Microx® Research </h1>
+			<p  id="description"> Help us to improve our services </p>
+		</header>
+		<main>
+			<form id="survey-form">
+				<fieldset>
+					<label id="name-label" for="name">Your Name: </label>
+					<input placeholder="yourname" id="name" name="name-entrada" type="text" required >
+					<label id="email-label" for="email">Your Email: </label>
+					<input placeholder="yourEmail@foo" id="email" name="email-entrada" type="email" required >
+					<label id="number-label" for="number">Your Age(optional): </label>
+					<input placeholder="age" id="number" name="age" type="number" min="20" max="100">
+				</fieldset>
+				<fieldset>
+					<label id="service-label" for="dropdown"> Tell us which services below is the best:
+						<select id="dropdown" name="dropdown">
+							<option value="0"> (select an option) </option>
+							<option value="1"> Documents Handling </option>
+							<option value="2"> Judicial Assistance </option>
+							<option value="4"> Law analisys </option>
+						</select>
+					</label>
+				</fieldset>
+				<fieldset>
+					<legend> Our services make you...? </legend>
+					<label for="opt1"><input id="opt1" name="opcao" type="radio" value="1"> Still Happy</label>
+					<label for="opt2"><input id="opt2" name="opcao" type="radio" value="2"> Still Feel Good</label>
+					<label for="opt3"><input id="opt3" name="opcao" type="radio" value="3"> Still Angry</label>
+				</fieldset>
+				<fieldset>
+					<legend> The services you use the most are... </legend>
+					<label for="DocHand"><input id="DocHand" type="checkbox" name="DocHand" value="1"> Document Handling</label>
+					<label for="JudAss"><input id="JudAss" type="checkbox" value="2"> Judicial Assistance</label>
+					<label for="LawAna"><input id="LawAna" type="checkbox" value="3"> Law Analisys</label>
+				</fieldset>
+				<fieldset>
+					<legend> Talk more about the services provided by us: </legend>
+					<textarea id="comment">
+					</textarea>
+				</fieldset>
+				<input type="submit" id="submit" value="submit">
+			</form>
+		</main>
+	</body>
+</html>
