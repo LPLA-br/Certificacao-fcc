@@ -1,14 +1,22 @@
 body
 {
-  background: linear-gradient(#000000, #696969);  
+  background-image: url('https://picjumbo.com/wp-content/uploads/beautiful-green-wheat-field-free-photo-2210x3315.jpg');  
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
 }
 
 main,header
 {
   margin: 0 auto;
   max-width: 70em;
-  background-color: #afafaf;
+  background-color: #fafafadf;
   padding: 0.3em;
+}
+
+header
+{
+  border-bottom: 1px solid #f2f2f29f;
 }
 
 h1,
@@ -29,7 +37,7 @@ figure
 {
   background-color: #ffffff;
   padding: 1em;
-  margin: 0 auto;
+  margin: 1em auto;
   border-radius: 10px;
 }
 
@@ -48,6 +56,7 @@ figcaption
 
 #tribute-info
 {
+  font-size: 1.2em;
   text-align: justify;
   margin: 0 auto;
   max-width: 40em;
