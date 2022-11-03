@@ -1,0 +1,71 @@
+body
+{
+  background: linear-gradient(#000000, #696969);  
+}
+
+main,header
+{
+  margin: 0 auto;
+  max-width: 70em;
+  background-color: #afafaf;
+  padding: 0.3em;
+}
+
+h1,
+h1+p
+{
+  text-align: center;
+  padding-bottom: 0.5em;
+}
+
+main
+{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+figure
+{
+  background-color: #ffffff;
+  padding: 1em;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+
+figcaption
+{
+  text-align: center;
+}
+
+#image
+{
+  margin: 0 auto;
+  height: 100%;
+  max-width: 850px;
+  object-fit: cover;
+}
+
+#tribute-info
+{
+  text-align: justify;
+  margin: 0 auto;
+  max-width: 40em;
+}
+
+span
+{
+  text-shadow: 1px 1px;
+}
+
+cite+h3
+{
+  text-align: center;
+}
+
+/*
+li~li
+{
+  background-color: black;
+}
+*/
