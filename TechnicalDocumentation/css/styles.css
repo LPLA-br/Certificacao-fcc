@@ -1,0 +1,132 @@
+/* folha de estilo da documentação */
+
+:root
+{
+  --preto: #000000;
+}
+
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a
+{
+  text-decoration: none;
+}
+
+li
+{
+  list-style: none;
+}
+
+body
+{
+  display: flex;
+}
+
+header
+{
+  text-align: center;
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+#navbar > *,
+#navbar > ul > li
+{
+  border-bottom: 1px solid var(--preto);
+}
+
+#navbar
+{
+  width: 90em;
+  height: 100vh;
+  overflow-y: scroll;
+  border-right: 1px solid var(--preto);
+}
+
+#navbar li
+{
+  text-align: center;
+  padding: 3rem 0;
+  overflow-x: hidden;
+  
+}
+
+#navbar a
+{
+  color: black;
+  font-family: monospace;
+  font-size: 1.5rem;
+}
+
+#main-doc
+{
+  height: 100vh;
+  overflow-y: scroll;
+}
+
+.main-section
+{
+  padding: 1rem;
+}
+
+.main-section header
+{
+  border: 1px solid var(--preto);
+  border-radius: 10px;
+}
+
+.main-section h2
+{
+  font-style: italic;
+}
+
+.main-section p,
+.main-section ul
+{
+  padding: 1rem
+}
+
+.main-section .negrito
+{
+  font-weight: bold;
+}
+
+.main-section:last-of-type
+{
+  margin-bottom: 18em;
+}
+
+.ocultar
+{
+  display: none;
+}
+
+@media ( max-width: 500px )
+{
+  
+  body
+  {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  #navbar
+  {
+    width: 100vw;
+    height: 100%;
+    display: block;
+    overflow-y: hidden;
+  }
+  
+  #main-doc
+  {
+    width: 100vw;
+    height: 100%;
+    overflow-y: hidden;
+  }
+}
