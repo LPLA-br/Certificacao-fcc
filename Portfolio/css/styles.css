@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Toto&family=Open+Sans:wght@300&family=Oswald&family=Roboto:ital,wght@1,900&display=swap');
+
+:root
+{
+  --preto: #000000;
+  --branco: #ffffff;
+  --pagina: #004b7d;
+  --ofertas: #a0a0a0;
+
+  --espacamento-headersection1: 3rem;
+}
+
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body
+{
+    height: 95vh;
+    font-family: 'Oswald' ,sans-sefif;
+}
+
+#header
+{
+  position: fixed;
+  top: 0;
+  display: flex;
+  justify-content: space-around;
+  height: var(--espacamento-headersection1);
+  width: 100vw;
+  align-items:  center;
+  opacity: 1;
+  background-color: var(--pagina);
+}
+
+#header nav
+{
+  display: flex;
+  width: 90%;
+  justify-content:space-around;
+}
+
+#header>nav>a
+{
+  height: 1rem;
+  color: var(--branco);
+  text-decoration: none;
+  text-align: center;
+  padding: 0 1rem;
+  height: 100%;
+  width: 100%;
+}
+#header>nav>a:hover
+{
+    color: red;
+    text-shadow: 1px 1px 1px black;
+}
+
+main>section:nth-of-type(1)
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: var(--espacamento-headersection1);
+    background-color: #0087e0;
+    text-align: center;
+    font-size: 1.5rem;
+    height:100vh;
+    background: linear-gradient(45deg ,#004b7d, #0087e0, #004b7d);
+}
+
+main>section:nth-of-type(2)
+{
+    background-color: #acd6c3;
+}
+main>section:nth-of-type(2)>div
+{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 4rem;
+    width: 90%;
+    max-width: 1280px;
+    padding: 1rem 0 1rem 0;
+    margin: 0 auto;
+}
+main>section:nth-of-type(2) h2
+{
+    text-align: center;
+    text-shadow: 10px 10px 10px  var(--preto);
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+main>section:nth-of-type(2) figure
+{
+    text-align: center;
+    background-color: #7fa393;
+    border-radius: 10px;
+}
+main>section:nth-of-type(2) a
+{
+    display: block;
+    text-decoration: none;
+    text-align: center;
+}
+
+main>section:nth-of-type(3)
+{
+    background-color: #f7665e;
+    text-align: center;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+main>section:nth-of-type(3) nav
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 20em;
+    margin: 0 auto;
+}
+main>section:nth-of-type(3) a
+{
+    text-decoration: none;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
+footer
+{
+  display: flex;
+  flex-direction: row;
+  background-color: var(--pagina);
+  justify-content: space-between;
+  gap: 1rem;
+}
+footer>*
+{
+    padding: 1rem 1rem 1rem 1rem ;
+    color: var(--branco);
+}
+
+@media ( max-width: 500px )
+{}
